@@ -6,11 +6,27 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "yarn clean && parcel build src/index.html --public-url /extension/<EXTENSION_ID>",
-    "clean": "rm -rf dist/",
-    "dev": "yarn clean && parcel src/index.html --https"
+    "build": "gulp build",
+    "dev": "gulp dev",
+    "bundle": "gulp bundle"
+  },
+  "dependencies": {
+    "contentful-ui-extensions-sdk": "^3.4.0"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.7.1"
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "babelify": "^8.0.0",
+    "browser-sync": "^2.24.4",
+    "browserify": "^16.2.2",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-inline-source": "^3.1.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
   }
 }

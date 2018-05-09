@@ -6,13 +6,16 @@
   <link rel="stylesheet" href="//contentful.github.io/ui-extensions-sdk/cf-extension.css">
   <!-- UI Extensions SDK -->
   <script src="//contentful.github.io/ui-extensions-sdk/cf-extension-api.js"></script>
+
+  <!-- Custom styles of the UI Extension -->
+  <link rel="stylesheet" type="text/css" href="/index.css" inline>
 </head>
-<body style="margin:0">
+<body>
   <!-- Custom markup of the UI Extension -->
   <input type="text" class="cf-form-input" id="extension-input">
   <label class="cf-form-hint" for="extension-input">Help text for the custom input.</label>
 
   <!-- Custom logic of the UI Extension -->
-  <script src="./index.js"></script>
+  <script src="/index.js" inline></script>
 </body>
 </html>
