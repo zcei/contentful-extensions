@@ -1,5 +1,7 @@
 # Contentful UI Extensions
 
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
+
 SumUp uses [Contentful](https://contentful.com) as the CMS of choice for many of our web projects. Over time our use cases have become more complex and we've needed ways to enhance the editing experience for our content creators. Contentful allows us to customize and extend the functionality of the Web Application's entry editor through [UI extensions](https://github.com/contentful/ui-extensions-sdk). Extensions can be custom user interface controls for fields, such as a dropdown, or help with workflows, data management and integrations.
 
 ## Documentation

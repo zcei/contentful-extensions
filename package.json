@@ -9,7 +9,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "create:extension": "./bin/create/extension",
-    "publish": "lerna publish"
+    "deploy": "lerna publish --skip-npm && lerna run deploy"
   },
   "devDependencies": {
     "lerna": "^2.11.0"
