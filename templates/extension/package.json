@@ -1,7 +1,7 @@
 {
   "name": "<EXTENSION_ID>",
   "version": "1.0.0",
-  "description": "UI extension",
+  "description": "<EXTENSION_NAME>",
   "main": "dist/index.html",
   "license": "MIT",
   "private": true,

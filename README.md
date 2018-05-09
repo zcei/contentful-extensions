@@ -21,7 +21,7 @@ This command will install the dependencies for all packages and link any cross-d
 You can quickly bootstrap a new UI extension by running this command in the project root:
 
 ```bash
-yarn create:extension <EXTENSION_ID>
+yarn create:extension <EXTENSION_ID> "<EXTENSION_NAME>"
 ```
 
 This will create a new folder `./packages/<EXTENSION_ID>` with all the files your extension needs. The extension UI goes inside `./src/index.html`, the logic lives inside `./src/index.js`.

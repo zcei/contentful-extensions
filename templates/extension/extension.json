@@ -1,5 +1,5 @@
 {
-  "name": "UI extension",
+  "name": "<EXTENSION_NAME>",
   "id": "<EXTENSION_ID>",
   "fieldTypes": ["Symbol"],
   "src": "https://cms.sumup.com/extension/<EXTENSION_ID>",
