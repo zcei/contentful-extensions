@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+extensions_path=packages
+template_path=templates/extension/.
+
+extension_id=$1
+extension_path="${extensions_path}/${extension_id}"
+
+mkdir -p $extension_path
+cp -r $template_path $extension_path
+find ${extension_path} -type f -iname "*.json" -exec sed -i.bak "s/<EXTENSION_ID>/$extension_id/g" {} \;
+rm ${extension_path}/*.bak
