@@ -1,8 +1,9 @@
 # Project #
 
-.eslintcache
 dist
 .cache
+.eslintcache
+coverage
 
 # Dependencies #
 

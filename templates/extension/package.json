@@ -10,10 +10,11 @@
     "dev": "gulp dev",
     "bundle": "gulp bundle",
     "predeploy": "bundle",
-    "deploy": "contentful extension update --descriptor extension.json"
-  },
-  "dependencies": {
-    "contentful-ui-extensions-sdk": "^3.4.0"
+    "deploy": "contentful extension update --descriptor extension.json",
+    "test": "yarn test:lint-js && yarn test:unit",
+    "test:lint-js": "eslint --cache --quiet packages/**/**/*.js",
+    "test:unit": "jest --coverage",
+    "test:unit:watch": "jest --watch"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -29,6 +30,8 @@
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.0",
+    "jest": "^22.4.3",
+    "jest-cli": "^22.4.3",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
   }
