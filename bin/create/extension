@@ -17,3 +17,5 @@ cp -r $template_path $extension_path
 find ${extension_path} -type f -iname "*.json" -exec sed -i.bak "s/<EXTENSION_ID>/$extension_id/g" {} \;
 find ${extension_path} -type f \( -iname "*.json" -o -iname "*.md" \) -exec sed -i.bak "s/<EXTENSION_NAME>/$extension_name/g" {} \;
 rm ${extension_path}/*.bak
+
+yarn bootstrap

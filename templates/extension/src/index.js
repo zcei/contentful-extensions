@@ -1,18 +1,18 @@
 // When UI Extensions SDK is loaded the callback will be executed.
 window.contentfulExtension.init(initExtension);
 
-function initExtension(extensionsApi) {
-  // "extensionsApi" is providing an interface documented here:
+function initExtension(extension) {
+  // "extension" is providing an interface documented here:
   // https://github.com/contentful/ui-extensions-sdk/blob/master/docs/ui-extensions-sdk-frontend.md
 
   // Automatically adjust UI Extension size in the Web App.
-  extensionsApi.window.updateHeight();
-  extensionsApi.window.startAutoResizer();
+  extension.window.updateHeight();
+  extension.window.startAutoResizer();
 
   const inputEl = document.getElementById('extension-input');
 
   //  The field this UI Extension is assigned to.
-  const { field } = extensionsApi;
+  const { field } = extension;
 
   // Callback for changes of the field value.
   const detachValueChangeHandler = field.onValueChanged(valueChangeHandler);
