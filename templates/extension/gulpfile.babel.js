@@ -24,6 +24,7 @@ const server = browserSync.create();
 const serve = done => {
   server.init({
     port: PORT,
+    https: true,
     server: {
       baseDir: DEST
     }

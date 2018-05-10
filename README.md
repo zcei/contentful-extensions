@@ -2,7 +2,7 @@
 
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 
-SumUp uses [Contentful](https://contentful.com) as the CMS of choice for many of our web projects. Over time our use cases have become more complex and we've needed ways to enhance the editing experience for our content creators. Contentful allows us to customize and extend the functionality of the Web Application's entry editor through [UI extensions](https://github.com/contentful/ui-extensions-sdk). Extensions can be custom user interface controls for fields, such as a dropdown, or help with workflows, data management and integrations.
+At SumUp we use [Contentful](https://contentful.com) as the CMS of choice for many of our web projects. Over time our use cases have become more complex and we've needed ways to enhance the editing experience for our content creators. Contentful allows us to customize and extend the functionality of the entry editor through [UI extensions](https://github.com/contentful/ui-extensions-sdk). Extensions can be custom user interface controls for fields (such as a dropdown) or help with workflows, data management and integrations.
 
 ## Documentation
 
@@ -26,17 +26,18 @@ You can quickly bootstrap a new UI extension by running this command in the proj
 yarn create:extension <EXTENSION_ID> "<EXTENSION_NAME>"
 ```
 
-This will create a new folder `./packages/<EXTENSION_ID>` with all the files your extension needs. The extension UI goes inside `./src/index.html`, the logic lives inside `./src/index.js`.
+This will create a new folder `./packages/<EXTENSION_ID>` with all the files your extension needs. The extension UI goes inside `./src/index.html`. The logic lives inside `./src/index.js`. Any custom styles can be added to `./src/index.scss`, although the default styles provided by Contentful should be sufficient.
+The command will also install the basic dependencies for your extension, so you can jump straight into development.
 
 ## Development
 
-We use [`parcel`](https://github.com/parcel-bundler/parcel) to bundle the code. To start a development server with hot reloading, run the following command inside your extension folder:
+We use [`gulp`](https://github.com/gulpjs/gulp) build, bundle and serve the code. To start a development server with automatic reloading, run the following command inside your extension folder:
 
 ```bash
 yarn dev
 ```
 
-Parcel generates a self-signed certificate to enable a secure `https` connection. This is important to get the extensions to work with Contentful's CSP policy. The first time you load the extension, you will likely get a security error. Simply add an exception for this certificate.
+The development server is created by [BrowserSync](https://github.com/Browsersync/browser-sync), which generates a self-signed certificate to enable a secure `https` connection. This is important to get the extensions to work with Contentful's CSP policy. The first time you load the extension, you will likely get a security error. Simply add an exception for this certificate.
 
 ## Publishing to Contentful
 
