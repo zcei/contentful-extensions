@@ -9,7 +9,8 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "create:extension": "./bin/create/extension",
-    "deploy": "lerna publish --skip-npm && lerna run deploy",
+    "cf:create": "lerna run cf:create",
+    "cf:update": "lerna run cf:update",
     "test": "lerna run test",
     "test:ci": "lerna run test -- --runInBand"
   },

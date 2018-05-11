@@ -26,19 +26,32 @@ You can quickly bootstrap a new UI extension by running this command in the proj
 yarn create:extension <EXTENSION_ID> "<EXTENSION_NAME>"
 ```
 
-This will create a new folder `./packages/<EXTENSION_ID>` with all the files your extension needs. The extension UI goes inside `./src/index.html`. The logic lives inside `./src/index.js`. Any custom styles can be added to `./src/index.scss`, although the default styles provided by Contentful should be sufficient.
-The command will also install the basic dependencies for your extension, so you can jump straight into development.
+This will create a new folder `./packages/<EXTENSION_ID>` with all the files your extension needs. The extension UI goes inside `./src/index.html`. The logic lives inside `./src/index.js`. Any custom styles can be added to `./src/index.scss`, although the default styles provided by Contentful should be sufficient. The command will also install the basic dependencies for your extension, so you can jump straight into development.
 
 ## Development
 
-We use [`gulp`](https://github.com/gulpjs/gulp) build, bundle and serve the code. To start a development server with automatic reloading, run the following command inside your extension folder:
+We use [`gulp`](https://github.com/gulpjs/gulp) to build, bundle and serve all code. Styles are written in SASS and JavaScript in ES6+. To start a development server with automatic reloading, run the following command inside your extension folder:
 
 ```bash
 yarn dev
 ```
 
-The development server is created by [BrowserSync](https://github.com/Browsersync/browser-sync), which generates a self-signed certificate to enable a secure `https` connection. This is important to get the extensions to work with Contentful's CSP policy. The first time you load the extension, you will likely get a security error. Simply add an exception for this certificate.
+The development server is created by [`BrowserSync`](https://github.com/Browsersync/browser-sync), which generates a self-signed certificate to enable a secure `https` connection. This is important to get the extensions to work with Contentful's CSP policy. The first time you load the extension, you will likely get a security error. Simply add an exception for this certificate.
 
 ## Publishing to Contentful
 
-Visit the [Contentful CLI docs](https://github.com/contentful/contentful-cli/tree/master/docs/extension) for up-to-date instructions to publish, update or manage the UI extensions on Contentful.
+During development, the extension is served from `https://localhost:1234`. Once your extension is finished, you can publish it to Contentful by running the following command inside your extension folder:
+
+```bash
+yarn cf:create --space-id <SPACE_ID> --environment-id <ENVIRONMENT_ID>
+```
+
+After you've published your extensions to a Contentful space for the first time, you need to run the following command in your extension folder to push any changes:
+
+```bash
+yarn cf:update --space-id <SPACE_ID> --environment-id <ENVIRONMENT_ID> --version <VERSION>
+```
+
+Both commands will bundle your code and upload it to the Contentful space and environment you specified.
+
+Visit the [Contentful CLI docs](https://github.com/contentful/contentful-cli/tree/master/docs/extension) for more up-to-date instructions to publish, update or manage the UI extensions on Contentful.
