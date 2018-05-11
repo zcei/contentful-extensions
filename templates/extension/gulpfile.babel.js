@@ -1,5 +1,6 @@
 import gulp from 'gulp';
 import sass from 'gulp-sass';
+import noop from 'gulp-noop';
 import inlineSource from 'gulp-inline-source';
 import uglify from 'gulp-uglify';
 import del from 'del';
@@ -8,6 +9,7 @@ import browserify from 'browserify';
 import babel from 'babelify';
 import source from 'vinyl-source-stream';
 import buffer from 'vinyl-buffer';
+import { argv } from 'yargs';
 
 const PORT = 1234;
 const SRC = './src';
@@ -18,6 +20,7 @@ const PATHS = {
   html: `${SRC}/index.html`
 };
 
+const isDev = !argv.production;
 const server = browserSync.create();
 
 // Serve dist folder on port 1234 for local development.
@@ -45,7 +48,7 @@ const scripts = () =>
     .bundle()
     .pipe(source('index.js'))
     .pipe(buffer())
-    .pipe(uglify())
+    .pipe(isDev ? noop() : uglify())
     .pipe(gulp.dest(DEST));
 
 const styles = () =>

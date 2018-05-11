@@ -1,14 +1,14 @@
 {
-  "name": "<EXTENSION_ID>",
+  "name": "EXTENSION_ID",
   "version": "1.0.0",
-  "description": "<EXTENSION_NAME>",
+  "description": "EXTENSION_NAME",
   "main": "dist/index.html",
   "license": "MIT",
   "private": true,
   "scripts": {
     "build": "gulp build",
     "dev": "gulp dev",
-    "bundle": "gulp bundle",
+    "bundle": "gulp bundle --production",
     "predeploy": "bundle",
     "deploy": "contentful extension update --descriptor extension.json",
     "test": "yarn test:lint-js && yarn test:unit",
@@ -28,12 +28,14 @@
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-inline-source": "^3.1.0",
+    "gulp-noop": "^1.0.0",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.0",
     "jest": "^22.4.3",
     "jest-cli": "^22.4.3",
     "vinyl-buffer": "^1.0.1",
-    "vinyl-source-stream": "^2.0.0"
+    "vinyl-source-stream": "^2.0.0",
+    "yargs": "^11.0.0"
   }
 }
