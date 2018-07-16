@@ -1,0 +1,7 @@
+{
+  "name": "<EXTENSION_NAME>",
+  "id": "<EXTENSION_ID>",
+  "fieldTypes": ["Symbol"],
+  "srcdoc": "./dist/index.html",
+  "sidebar": false
+}

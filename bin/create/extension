@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 
-extensions_path=packages
-template_path=templates/extension/.
+extensions_root=packages
+templates_root=templates/extension/.
 
-extension_id=$1
+extension_id=${1:-new-extension}
 extension_name=${2:-Extension name}
-extension_path="${extensions_path}/${extension_id}"
+extension_type=${3:-basic}
+extension_path="${extensions_root}/${extension_id}"
+template_path="${templates_root}/${extension_type}/."
 
 if [ -d "$extension_path" ]; then
   echo "⚠️  An extension with the id \"$extension_id\" already exists."

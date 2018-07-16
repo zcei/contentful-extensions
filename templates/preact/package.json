@@ -15,15 +15,21 @@
     "test:unit": "jest --coverage",
     "test:unit:watch": "jest --watch"
   },
+  "dependencies": {
+    "preact": "^8.2.9"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
     "babelify": "^8.0.0",
     "browser-sync": "^2.24.4",
     "browserify": "^16.2.2",
-    "contentful-cli": "^0.11.0",
+    "contentful-cli": "^0.14.2",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-inline-source": "^3.1.0",
