@@ -1,7 +1,7 @@
 {
-  "name": "<EXTENSION_ID>",
+  "name": "image-data-uri",
   "version": "1.0.0",
-  "description": "<EXTENSION_NAME>",
+  "description": "Generate a preview data URI for an image asset",
   "main": "dist/index.html",
   "license": "MIT",
   "scripts": {
@@ -10,10 +10,7 @@
     "bundle": "gulp bundle --production",
     "cf:create": "yarn bundle && contentful extension create --descriptor extension.json",
     "cf:update": "yarn bundle && contentful extension update --descriptor extension.json",
-    "test": "yarn test:lint-js && yarn test:unit",
-    "test:lint-js": "eslint --cache --quiet packages/**/**/*.js",
-    "test:unit": "jest --coverage",
-    "test:unit:watch": "jest --watch"
+    "test": "eslint --cache --quiet packages/**/**/*.js"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -31,8 +28,6 @@
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.0",
-    "jest": "^22.4.3",
-    "jest-cli": "^22.4.3",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0",
     "yargs": "^11.0.0"

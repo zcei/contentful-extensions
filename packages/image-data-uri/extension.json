@@ -1,0 +1,33 @@
+{
+  "name": "Image Data URI",
+  "id": "image-data-uri",
+  "fieldTypes": ["Text"],
+  "srcdoc": "./dist/index.html",
+  "sidebar": false,
+  "parameters": {
+    "instance": [
+      {
+        "id": "imageFieldId",
+        "type": "Symbol",
+        "name": "Image Field Id",
+        "description":
+          "The id of the image field that the data URI should be generated for.",
+        "required": true
+      },
+      {
+        "id": "maxWidth",
+        "type": "Number",
+        "name": "Max width",
+        "description":
+          "The maximum width of the preview image. If both width and height are set, the preview image will be cropped to fit."
+      },
+      {
+        "id": "maxHeight",
+        "type": "Number",
+        "name": "Max height",
+        "description":
+          "The maximum height of the preview image. If both width and height are set, the preview image will be cropped to fit."
+      }
+    ]
+  }
+}
