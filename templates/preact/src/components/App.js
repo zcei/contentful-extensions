@@ -4,11 +4,11 @@ import { h, Component } from 'preact';
 import Input from './Input';
 
 export default class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
-      value: ''
+      value: props.field.getValue()
     };
   }
 

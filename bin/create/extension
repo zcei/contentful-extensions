@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 extensions_root=packages
-templates_root=templates/extension/.
+templates_root=templates
 
 extension_id=${1:-new-extension}
 extension_name=${2:-Extension name}
