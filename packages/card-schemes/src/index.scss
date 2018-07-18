@@ -1,0 +1,76 @@
+@mixin hideVisually {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+$color-lightgrey: #f7f9fa;
+$color-grey: #b4c3ca;
+$color-darkgrey: #c3cfd5;
+
+$color-lightgreen: #e8fff7;
+$color-green: #0eb87f;
+
+$spacing: 10px;
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#svg-symbols {
+  @include hideVisually;
+}
+
+.cs-wrapper {
+  display: inline-block;
+  float: left;
+}
+
+.cs-checkbox {
+  @include hideVisually;
+
+  &:focus + .cs-label {
+    border-color: $color-darkgrey;
+  }
+
+  &:checked + .cs-label {
+    background-color: $color-lightgreen;
+    border-color: $color-green;
+
+    span {
+      color: $color-green;
+    }
+  }
+}
+
+.cs-label {
+  display: block;
+  margin-top: $spacing;
+  margin-right: $spacing;
+  padding: $spacing;
+  background-color: $color-lightgrey;
+  border: 1px solid $color-grey;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.2s ease-out;
+}
+
+.cs-icon {
+  display: block;
+  width: 45px;
+  height: 35px;
+  margin: 0 auto 5px;
+}

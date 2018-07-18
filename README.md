@@ -14,6 +14,7 @@ _At [SumUp](https://sumup.com/) we use [Contentful](https://contentful.com) as t
 
 - [Extensions](#extensions)
   - [Image Data URI](#image-data-uri)
+  - [Card Schemes](#card-schemes)
 - [Development](#development)
   - [Getting started](#getting-started)
   - [Creating a new extension](#creating-a-new-extension)
@@ -27,6 +28,14 @@ _At [SumUp](https://sumup.com/) we use [Contentful](https://contentful.com) as t
 ### [Image Data URI](https://github.com/sumup/contentful-extensions/tree/master/packages/image-data-uri)
 
 This extension generates a data URI for an image asset. Useful for lazyloading images. Works with `Text` field types.
+
+![Screenshot of image data URI extension](packages/image-data-uri/screenshot.png)
+
+### [Card Schemes](https://github.com/sumup/contentful-extensions/tree/master/packages/card-schemes)
+
+This extension provides a visual editor to preview and select card schemes. Works with the `Symbols` field type.
+
+![Screenshot of card schemes editor](packages/card-schemes/screenshot.png)
 
 ## Development
 

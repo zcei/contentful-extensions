@@ -1,0 +1,17 @@
+{
+  "name": "Card schemes",
+  "id": "card-schemes",
+  "fieldTypes": ["Symbols"],
+  "srcdoc": "./dist/index.html",
+  "sidebar": false,
+  "parameters": {
+    "instance": [
+      {
+        "id": "helpText",
+        "type": "Symbol",
+        "name": "Help text",
+        "description": "This help text will show up below the field."
+      }
+    ]
+  }
+}
