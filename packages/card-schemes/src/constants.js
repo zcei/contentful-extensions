@@ -1,6 +1,6 @@
 export const CARD_SCHEMES = [
   'amex',
-  'androidPay',
+  'googlePay',
   'applePay',
   'bancoEstado',
   'dankort',
@@ -28,7 +28,7 @@ export const LABELS = {
   diners: 'Diners',
   discover: 'Discover',
   applePay: 'Apple Pay',
-  androidPay: 'Android Pay',
+  googlePay: 'Google Pay',
   nfc: 'NFC',
   bancoEstado: 'Banco Estado',
   ec: 'EC',
