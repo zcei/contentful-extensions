@@ -14,6 +14,7 @@ _At [SumUp](https://sumup.com/) we use [Contentful](https://contentful.com) as t
 
 - [Extensions](#extensions)
   - [Image Data URI](#image-data-uri)
+  - [Localized Preview Links](#localized-preview-links)
   - [Card Schemes](#card-schemes)
 - [Development](#development)
   - [Getting started](#getting-started)
@@ -30,6 +31,12 @@ _At [SumUp](https://sumup.com/) we use [Contentful](https://contentful.com) as t
 This extension generates a data URI for an image asset. Useful for lazyloading images. Works with `Text` field types.
 
 ![Screenshot of image data URI extension](packages/image-data-uri/screenshot.png)
+
+### [Localized Preview Links](https://github.com/sumup/contentful-extensions/tree/master/packages/localized-preview-links)
+
+This sidebar extension generates localized preview links for a page. Works with `Boolean` field types (although the extension doesn't save any data).
+
+<img alt="Screenshot of localized preview links extension" src="packages/localized-preview-links/screenshot.png" width="400"/>
 
 ### [Card Schemes](https://github.com/sumup/contentful-extensions/tree/master/packages/card-schemes)
 

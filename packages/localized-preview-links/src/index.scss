@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 0 16px;
+  padding: 0;
+  column-count: 2;
+  column-gap: 12px;
+}
+
+li {
+  padding: 2px 0;
+  margin-bottom: 4px;
+}

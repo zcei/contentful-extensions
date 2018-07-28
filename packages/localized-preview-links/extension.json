@@ -1,0 +1,7 @@
+{
+  "name": "Localized Preview Links",
+  "id": "localized-preview-links",
+  "fieldTypes": ["Boolean"],
+  "srcdoc": "./dist/index.html",
+  "sidebar": true
+}
