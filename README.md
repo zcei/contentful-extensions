@@ -63,14 +63,14 @@ This command will install the dependencies for all packages and link any cross-d
 You can quickly bootstrap a new UI extension by running this command in the project root:
 
 ```bash
-yarn create:extension <EXTENSION_ID> "<EXTENSION_NAME>" <EXTENSION_TYPE>
+yarn create:extension <EXTENSION_ID> "<EXTENSION_NAME>" <EXTENSION_TEMPLATE>
 ```
 
 This will create a new folder `./packages/<EXTENSION_ID>` with all the files your extension needs. The command will also install the basic dependencies for your extension, so you can jump straight into development.
 
 The extension UI goes inside `./src/index.html`. The logic lives inside `./src/index.js`. Any custom styles can be added to `./src/index.scss`, although the default styles provided by Contentful should be sufficient.
 
-Two different extension templates are available: [**basic**](https://github.com/sumup/contentful-extensions/tree/master/templates/basic) (default) includes the above mentioned files. [**preact**](https://github.com/sumup/contentful-extensions/tree/master/templates/preact) extends the base template with — you guessed it — [Preact](https://github.com/developit/preact) for easier state management and DOM updates.
+Two different **extension templates** are available: [**basic**](https://github.com/sumup/contentful-extensions/tree/master/templates/basic) (default) includes the above mentioned files. [**preact**](https://github.com/sumup/contentful-extensions/tree/master/templates/preact) extends the base template with — you guessed it — [Preact](https://github.com/developit/preact) for easier state management and DOM updates.
 
 ### Local dev
 
