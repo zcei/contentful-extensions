@@ -1,0 +1,33 @@
+$spacing: 8px;
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+.cf-color {
+  padding: 2 * $spacing;
+  display: inline-block;
+  border-radius: $spacing / 2;
+  margin-top: $spacing;
+  margin-right: $spacing;
+}
+
+.cf-copytext {
+  font-size: 14px;
+  font-weight: bold;
+  border: 0;
+  outline: 0;
+  background: none;
+  text-align: center;
+  width: 4.5rem;
+}

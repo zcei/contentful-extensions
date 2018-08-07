@@ -1,0 +1,22 @@
+$spacing: 8px;
+
+body {
+  margin: 0;
+  margin-top: $spacing;
+}
+
+.cf-brightness {
+  padding: $spacing * 1.5 $spacing * 2;
+  display: inline-block;
+  border-radius: $spacing / 2;
+}
+
+.cf-copytext {
+  font-size: 14px;
+  font-weight: bold;
+  border: 0;
+  outline: 0;
+  background: none;
+  text-align: center;
+  width: 3.5rem;
+}

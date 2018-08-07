@@ -18,7 +18,7 @@ $color-darkgrey: #c3cfd5;
 $color-lightgreen: #e8fff7;
 $color-green: #0eb87f;
 
-$spacing: 10px;
+$spacing: 8px;
 
 body {
   margin: 0;
@@ -35,7 +35,6 @@ ul {
 }
 
 .cs-wrapper {
-  display: inline-block;
   float: left;
 }
 
@@ -63,7 +62,7 @@ ul {
   padding: $spacing;
   background-color: $color-lightgrey;
   border: 1px solid $color-grey;
-  border-radius: 5px;
+  border-radius: $spacing / 2;
   text-align: center;
   transition: all 0.2s ease-out;
 }
@@ -72,5 +71,5 @@ ul {
   display: block;
   width: 45px;
   height: 35px;
-  margin: 0 auto 5px;
+  margin: 0 auto $spacing / 2;
 }
