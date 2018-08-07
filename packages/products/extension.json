@@ -1,0 +1,9 @@
+{
+  "name": "Products",
+  "id": "products",
+  "fieldTypes": [
+    "Symbols"
+  ],
+  "srcdoc": "./dist/index.html",
+  "sidebar": false
+}

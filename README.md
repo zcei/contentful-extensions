@@ -18,6 +18,7 @@ _At [SumUp](https://sumup.com/) we use [Contentful](https://contentful.com) as t
   - [Card Schemes](#card-schemes)
 - [Development](#development)
   - [Getting started](#getting-started)
+  - [API reference](#api-reference)
   - [Creating a new extension](#creating-a-new-extension)
   - [Local dev](#local-dev)
   - [Publishing to Contentful](#publishing-to-contentful)
@@ -56,9 +57,19 @@ This sidebar extension generates localized preview links for a page. Works with 
 
 <img alt="Screenshot of localized preview links extension" src="packages/localized-preview-links/screenshot.png" width="400"/>
 
+### [Product Selector](https://github.com/sumup/contentful-extensions/tree/master/packages/products)
+
+This extension provides a visual editor to preview and select products.
+
+![Screenshot of product selector extension](packages/products/screenshot.png)
+
 ## Development
 
-This [quick introduction](https://www.contentful.com/developers/docs/concepts/uiextensions/) is a good place to get started with UI extensions. For more advanced and creative use cases, read this [blog post](https://www.contentful.com/blog/2017/10/09/creating-ui-extensions-with-contentful/). Refer to the [official SDK documentation](https://github.com/contentful/ui-extensions-sdk) for a list of available methods. You can also look through the existing extension files for inspiration.
+This [quick introduction](https://www.contentful.com/developers/docs/concepts/uiextensions/) is a good place to get started with UI extensions. For more advanced and creative use cases, read this [blog post](https://www.contentful.com/blog/2017/10/09/creating-ui-extensions-with-contentful/).
+
+### API Reference
+ Refer to the [official SDK documentation](https://github.com/contentful/ui-extensions-sdk/blob/master/docs/ui-extensions-sdk-frontend.md#extensionspace) for a list of available methods. You can also look through the existing extension files for inspiration.
+
 
 ### Getting started
 

@@ -1,0 +1,111 @@
+@mixin hideVisually {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+$color-lightgrey: #f7f9fa;
+$color-grey: #b4c3ca;
+$color-darkgrey: #c3cfd5;
+
+$color-lightgreen: #e8fff7;
+$color-green: #0eb87f;
+
+$spacing: 10px;
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pr-wrapper {
+  display: inline-block;
+  float: left;
+}
+
+.pr-checkbox {
+  @include hideVisually;
+
+  &:focus + .pr-label {
+    border-color: $color-darkgrey;
+  }
+
+  &:checked + .pr-label {
+    background-color: $color-lightgreen;
+    border-color: $color-green;
+
+    span {
+      color: $color-green;
+    }
+
+    .pr-promo {
+      color: #fff;
+    }
+  }
+}
+
+.pr-label {
+  position: relative;
+  display: block;
+  margin: $spacing;
+  padding: 20px 10px 10px;
+  background-color: $color-lightgrey;
+  border: 1px solid $color-grey;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.2s ease-out;
+}
+
+.pr-img {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.pr-promo {
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  font-size: 0.9em;
+  font-weight: 600;
+  padding: 2px 6px 1px 1px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #fff;
+  background: #498cea;
+  box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.3);
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 100%;
+    top: 0;
+    left: -6.5px;
+    padding: 0 0 7px;
+    background: inherit;
+    border-radius: 5px 0 0 5px;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 3.5px;
+    height: 5px;
+    bottom: -5px;
+    left: -4.5px;
+    background: #dbeaff;
+    border-radius: 5px 0 0 5px;
+  }
+}

@@ -59,10 +59,10 @@ export default class App extends Component {
         {CARD_SCHEMES.map(id => (
           <CardSchemeSelector
             key={id}
+            id={id}
             onClick={this.handleClick}
             checked={includes(values, id)}
             value={id}
-            id={id}
             label={LABELS[id]}
           />
         ))}
