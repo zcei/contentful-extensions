@@ -32,17 +32,29 @@ This extension generates a data URI for an image asset. Useful for lazyloading i
 
 ![Screenshot of image data URI extension](packages/image-data-uri/screenshot.png)
 
-### [Localized Preview Links](https://github.com/sumup/contentful-extensions/tree/master/packages/localized-preview-links)
+### [Image Color Palette](https://github.com/sumup/contentful-extensions/tree/master/packages/image-color-palette)
 
-This sidebar extension generates localized preview links for a page. Works with `Boolean` field types (although the extension doesn't save any data).
+This extension automatically generates a palette of the most dominant colors in an image. Works with `Symbols` field types.
 
-<img alt="Screenshot of localized preview links extension" src="packages/localized-preview-links/screenshot.png" width="400"/>
+<img alt="Screenshot of image color palette extension" src="packages/image-color-palette/screenshot.png" width="700"/>
+
+### [Image Brightness](https://github.com/sumup/contentful-extensions/tree/master/packages/image-brightness)
+
+This extension automatically calculates the average brightness of an image. Works with `Number` field types.
+
+<img alt="Screenshot of image brightness extension" src="packages/image-brightness/screenshot.png" width="500"/>
 
 ### [Card Schemes](https://github.com/sumup/contentful-extensions/tree/master/packages/card-schemes)
 
 This extension provides a visual editor to preview and select card schemes. Works with the `Symbols` field type.
 
 ![Screenshot of card schemes editor](packages/card-schemes/screenshot.png)
+
+### [Localized Preview Links](https://github.com/sumup/contentful-extensions/tree/master/packages/localized-preview-links)
+
+This sidebar extension generates localized preview links for a page. Works with `Boolean` field types (although the extension doesn't save any data).
+
+<img alt="Screenshot of localized preview links extension" src="packages/localized-preview-links/screenshot.png" width="400"/>
 
 ## Development
 
