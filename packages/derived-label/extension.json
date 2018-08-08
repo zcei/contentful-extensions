@@ -1,0 +1,17 @@
+{
+  "name": "Derived entry label from fields",
+  "id": "derived-label",
+  "fieldTypes": ["Symbol"],
+  "srcdoc": "./dist/index.html",
+  "sidebar": false,
+  "parameters": {
+    "instance": [
+      {
+        "id": "sourceFieldIds",
+        "type": "Symbol",
+        "name": "Field IDs",
+        "description": "The source fields from which the values are derived"
+      }
+    ]
+  }
+}
