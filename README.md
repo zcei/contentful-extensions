@@ -59,7 +59,7 @@ This sidebar extension generates localized preview links for a page. Works with 
 
 ### [Product Selector](https://github.com/sumup/contentful-extensions/tree/master/packages/products)
 
-This extension provides a visual editor to preview and select products.
+This extension provides a visual editor to preview and select products. Works with `Symbols` field types.
 
 ![Screenshot of product selector extension](packages/products/screenshot.png)
 

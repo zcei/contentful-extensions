@@ -113,7 +113,7 @@ export default class App extends Component {
   render(props, { values, products, error }) {
     return (
       <div>
-        {products.length && (
+        {products.length ? (
           <ul>
             {products.map(
               ({ productId, name, image, price, promotionPrice }) => (
@@ -131,7 +131,7 @@ export default class App extends Component {
               )
             )}
           </ul>
-        )}
+        ) : null}
         {error && <Error>{error}</Error>}
       </div>
     );
